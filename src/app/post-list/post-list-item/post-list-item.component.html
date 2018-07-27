@@ -1,0 +1,18 @@
+
+  <div  [ngClass]="{'list-group-item':true, 'list-group-item-like': loveIts > 0, 'list-group-item-unlike': loveIts < 0}" >
+
+    <div class="row ">
+      <h2 class="col-md-8">{{  title }}</h2>
+      <div class="">{{created_at | date : 'medium'}}</div>
+    </div>
+
+    <div class="row">
+      <div >{{ content }}</div>
+    </div>
+    <div class="row ">
+        <button  (click)="addLike()" class="btn btn-success">Love It</button>
+        <button  (click)="subbLike()"  class="btn btn-danger">Don't love it</button>
+
+    </div>
+  </div>
+

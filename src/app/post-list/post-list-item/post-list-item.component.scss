@@ -1,0 +1,17 @@
+@import '../../../sass/bootstarptools';
+
+button{
+  margin-right: .2rem;
+
+}
+.list-group-item-like{
+  background-color: #e1ffe6;
+  color: $success;
+
+}
+
+.list-group-item-unlike{
+  background-color: #e1ffe6;
+  color: $success;
+  background-color: #ff9e99;
+}
